@@ -1,0 +1,36 @@
+{
+  "name": "happywork-ftp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "happywork-ftp": "./bin/index.js"
+  },
+  "scripts": {
+    "build": "rollup --config rollup.config.js",
+    "start": "happywork-ftp upload --path ./dist --host *** --user *** --password *** --ftppath a/b/c"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/plugin-syntax-dynamic-import": "^7.0.0",
+    "@babel/plugin-transform-runtime": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
+    "@types/single-line-log": "^1.1.0",
+    "basic-ftp": "^2.14.3",
+    "chalk": "^2.4.1",
+    "commander": "^2.19.0",
+    "rollup": "^0.66.6",
+    "rollup-plugin-babel": "^4.0.3",
+    "rollup-plugin-commonjs": "^9.2.0",
+    "rollup-plugin-json": "^3.1.0",
+    "rollup-plugin-node-resolve": "^3.4.0",
+    "rollup-plugin-terser": "^3.0.0",
+    "rollup-plugin-typescript": "^1.0.0",
+    "single-line-log": "^1.1.2",
+    "tslib": "^1.9.3",
+    "typescript": "^3.1.3"
+  }
+}
