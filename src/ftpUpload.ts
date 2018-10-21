@@ -1,7 +1,6 @@
 import chalk from "chalk";
 import { stdout as singleLineLog } from "single-line-log";
-
-const ftp = require("basic-ftp");
+import ftp from "basic-ftp";
 
 export interface UploadProps {
   host: string;
