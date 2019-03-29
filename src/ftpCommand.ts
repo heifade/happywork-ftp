@@ -27,7 +27,7 @@ export function addSendFtpCommand() {
       let CWD = process.cwd();
       let sourcePath = resolve(CWD, pars.path);
 
-      upload({ host: pars.host, user: pars.user, password, sourcePath, ftpPath: pars.ftppath })
+      upload({ host: pars.host, port: pars.port, user: pars.user, password, sourcePath, ftpPath: pars.ftppath })
         .then(() => {})
         .catch(e => {});
     });

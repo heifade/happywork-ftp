@@ -4,6 +4,7 @@ import ftp from "basic-ftp";
 
 export interface UploadProps {
   host: string;
+  port: number;
   user: string;
   password: string;
   sourcePath: string;
@@ -17,6 +18,7 @@ export async function upload(pars: UploadProps) {
   try {
     await client.access({
       host: pars.host,
+      port: pars.port,
       user: pars.user,
       password: pars.password,
       secure: false
