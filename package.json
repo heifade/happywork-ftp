@@ -1,14 +1,14 @@
 {
   "name": "happywork-ftp",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "description": "",
   "main": "index.js",
   "bin": {
-    "happywork-ftp": "./bin/index.js"
+    "happywork-ftp": "./bin/happywork-ftp"
   },
   "scripts": {
-    "build": "happywork-node-builder",
-    "start": "node ./bin/index.js upload --path ./dist --host *** --user *** --password *** --ftppath a/b/c"
+    "build": "webpack --config webpack.config.ts",
+    "start": "node ./lib/index.js upload --path ./dist --host *** --user *** --password *** --ftppath a/b/c"
   },
   "files": [
     "bin"
@@ -18,11 +18,16 @@
   "license": "ISC",
   "devDependencies": {
     "@types/single-line-log": "^1.1.0",
+    "@types/webpack": "^4.39.3",
     "basic-ftp": "^2.14.3",
     "chalk": "^2.4.1",
     "commander": "^2.19.0",
     "happywork-node-builder": "^1.0.52",
     "single-line-log": "^1.1.2",
-    "typescript": "^3.1.3"
+    "ts-loader": "^6.2.0",
+    "ts-node": "^8.4.1",
+    "typescript": "^3.1.3",
+    "webpack": "^4.41.1",
+    "webpack-cli": "^3.3.9"
   }
 }
